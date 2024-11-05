@@ -1,0 +1,17 @@
+ {
+  "name": "jobportal",
+  "version": "1.0.0",
+  "description": "A comprehensive job portal application structured as a monorepo, containing:",
+  "main": "index.js",
+  "scripts": {
+    "in": "npm install --prefix StudentPortal && npm install --prefix AdminPortal && npm install --prefix Backend",
+    "start": "concurrently \"npm start --prefix StudentPortal\" \"npm start --prefix AdminPortal\" \"npm start --prefix Backend\"",
+    "dev": "concurrently \"npm run dev --prefix StudentPortal\" \"npm run dev --prefix AdminPortal\" \"npm run dev --prefix Backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
